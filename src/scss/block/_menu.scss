@@ -1,0 +1,69 @@
+.weekely-menu {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+
+    .day-menu {
+        background-color: $bgColor;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px;
+
+        .day {
+            font-size: $font-headline-min;
+            border-bottom: 2px solid $secondaryColor;
+            padding: 10px 0;
+            font-weight: $medium;
+        }
+
+        .meal-menu {
+            margin: 20px 0;
+
+            .name-menu {
+                font-size: 20px;
+                line-height: 24px;
+                margin: 10px 0px;
+                color: $darkColor;
+                font-weight: $bold;
+            }
+
+            .img-menu {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .type-menu {
+                font-size: $font-small;
+                font-weight: $medium;
+                color: $destColor;
+            }
+
+
+        }
+
+    }
+
+    .notas {
+        border: 1px solid $primaryColor;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px;
+        align-items: center;
+
+        .notas-title {
+            font-size: $font-headline-min;
+            border-bottom: 2px solid $secondaryColor;
+            padding: 10px 0;
+            font-weight: $medium;
+            margin-bottom: 40px;
+        }
+
+        .hr-notas {
+            width: 100%;
+            margin: 40px 0;
+            border: 0.25px solid #dbdbdb;
+        }
+    }
+}

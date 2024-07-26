@@ -1,0 +1,87 @@
+main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 100vh;
+
+    section {
+        max-width: $max-content;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: $font-headline;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: $regular;
+    }
+
+    p {
+        font-size: $font-body;
+        font-weight: $regular;
+        color: $darkColor;
+    }
+
+    hr {
+        width: 50px;
+        border: 1px solid $primaryColor;
+        margin-top: 20px;
+    }
+
+    .block-title {
+        text-align: center;
+        margin: 35px 0 20px 0;
+    }
+
+    .btn {
+        background-color: $secondaryColor;
+        padding: 8px 30px;
+        border-radius: 5px;
+        border: 0;
+        margin: 10px 0;
+        font-size: $font-btn;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+
+    .icono-menu {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+    .select-type {
+        margin-top: 20px;
+        padding: 0 10px;
+
+        select {
+            border: 1px solid #ececec;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 10px;
+            padding: 0 5px;
+            font-weight: $light;
+            color: $greyColor;
+            font-size: $font-small;
+            font-family: "Barlow", Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+
+        }
+    }
+}
+
+@media (min-width: 1026px) {
+    main {
+        .icono-menu {
+            margin: 10px 0;
+        }
+
+    }
+}

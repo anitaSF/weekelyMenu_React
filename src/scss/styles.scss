@@ -1,0 +1,33 @@
+@import "fonts/fonts";
+@import "variables/variables";
+@import "block/header";
+@import "block/main";
+@import "block/login";
+@import "block/form";
+@import "block/grid";
+@import "block/menu";
+@import "block/detail";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Barlow", Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}

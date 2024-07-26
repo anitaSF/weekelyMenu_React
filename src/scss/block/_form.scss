@@ -1,0 +1,73 @@
+.new-meal {
+    padding-top: 50px;
+
+    .title-form {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form-card {
+        width: 350px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+        border: 2px solid $primaryColor;
+        background-color: $bgColor;
+
+        .input-2col {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 6px;
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+            border: 1px solid $primaryColor;
+            border-radius: 5px;
+            height: 30px;
+            padding: 4px 10px;
+            margin-bottom: 12px;
+        }
+
+        input::placeholder {
+            font-family: "Barlow", Helvetica, 'Segoe UI', Tahoma, Arial, sans-serif;
+            font-weight: $light;
+            color: $greyColor;
+            font-size: $font-small;
+        }
+
+        .btn-form {
+            text-align: center;
+            margin: 10px 0;
+        }
+    }
+}
+
+@media (min-width: 1026px) {
+    .new-meal {
+        .form-card {
+            width: 700px;
+
+            .input-2col {
+                flex-direction: row;
+
+                .half-col {
+                    width: 100%;
+                }
+
+                .first-child {
+                    padding-right: 20px;
+                }
+
+            }
+        }
+    }
+}

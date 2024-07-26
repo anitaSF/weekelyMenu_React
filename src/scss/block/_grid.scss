@@ -1,0 +1,90 @@
+.meal-list {
+    max-width: $max-content;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+
+    .meal-grid {
+        width: 100%;
+        padding: 30px 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 30px;
+
+        .meal-card {
+            height: auto;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 30px;
+            border-radius: 10px;
+            border: 1px solid $primaryColor;
+            position: relative;
+            transition: all 0.3s;
+
+            .meal-name {
+                font-size: 24px;
+                line-height: 30px;
+                margin: 10px 0px;
+                color: $darkColor;
+            }
+
+            .img-meal {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .type {
+                font-size: $font-small;
+                font-weight: $medium;
+                color: $destColor;
+            }
+
+            .links-bottom {
+                margin-top: 20px;
+
+                .link-meal {
+                    font-size: $font-small;
+                    font-weight: $medium;
+                    color: $destColor;
+                }
+
+                .link-meal::after {
+                    content: '→';
+                    width: 14px;
+                    height: 12px;
+                    display: inline-block;
+                    margin-left: .25em;
+                }
+
+                .link-meal:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+
+                .trash-icon {
+                    font-size: 1.5rem;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    border: 0;
+                    border-radius: 5px;
+                    background-color: white;
+                }
+
+                .trash-icon:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .meal-card:hover {
+            transform: scale(1.05);
+        }
+    }
+
+}
