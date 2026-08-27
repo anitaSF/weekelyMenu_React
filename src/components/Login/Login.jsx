@@ -22,15 +22,18 @@ function Login({ setUserData }) {
     const handleForm = (e) => {
         e.preventDefault();
         getDataFromApi(user).then((data) => {
-            if (data.token) { // Asegúrate de que el token esté presente en la respuesta
-                localStorage.setItem("authToken", data.token); // Almacena el token en localStorage
+            // ✅ Comprobamos si viene 'accessToken' o 'token'
+            const token = data.accessToken || data.token;
+
+            if (token) {
+                localStorage.setItem("authToken", token); // Almacena el token en localStorage
                 setUserData(data);
                 navigate('/weekelymenu'); // Navegar a la página protegida
             } else {
-                console.error('Login failed: ', data); // Manejo de errores si la API no devuelve un token
+                console.error('Login failed: ', data);
             }
         }).catch(error => {
-            console.error('Error during login: ', error); // Manejo de errores
+            console.error('Error during login: ', error);
         });
     };
 
