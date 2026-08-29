@@ -41,7 +41,7 @@ function Login({ setUserData }) {
         <main className="login">
             <div className="card-login">
                 <img className="logo-img" src={logo} />
-                <h4 className="txt-login">Crea tus propios menus y empieza la semana comiendo sano y rico</h4>
+                <h4 className="txt-login">Crea tus propios menus y empieza la semana comiendo sano y rico.</h4>
                 <p style={{ fontSize: '0.8rem', opacity: 0.8, marginBottom: '1rem', textAlign: 'center' }}>
                     💡 <strong>Acceso Demo:</strong> Credenciales precargadas. Haz clic en "Login".
                 </p>
