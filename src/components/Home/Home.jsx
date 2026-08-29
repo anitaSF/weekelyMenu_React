@@ -25,7 +25,8 @@ function Home({ userData }) {
                     </div>
                     <h1>Weekely Menu</h1>
                     {data ?
-                        <h3>Hola {data.firstName}, este es tu menú para esta semana</h3>
+                        // <h3>Hola {data.firstName}, este es tu menú para esta semana</h3>
+                        <h3>Hola Emilys, este es tu menú para esta semana</h3>
                         : null}
                 </section>
 
